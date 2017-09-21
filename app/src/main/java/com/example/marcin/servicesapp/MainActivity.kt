@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initServiceConnection() : ServiceConnection{
         return object : ServiceConnection{
-            override fun onServiceDisconnected(p0: ComponentName?) {
+            override fun onServiceDisconnected(componentName: ComponentName?) {
                 Toast.makeText(applicationContext, "Failed", Toast.LENGTH_SHORT).show()
             }
 
